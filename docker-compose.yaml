@@ -2,6 +2,7 @@ version: '3.8'
 services:
   snmp-exporter:
     image: prom/snmp-exporter
+    container_name: snmp-exporter
     volumes:
       - ./snmp_exporter/snmp.yml:/etc/snmp_exporter/snmp.yml
     ports:
