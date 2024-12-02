@@ -12,7 +12,7 @@ services:
     container_name: prometheus
     volumes:
       - ./prometheus.yaml:/etc/prometheus/prometheus.yaml
-      - ./prometheus_data:/prometheus
+      #- ./prometheus_data:/prometheus
     command:
       - '--config.file=/etc/prometheus/prometheus.yaml'
     ports:
