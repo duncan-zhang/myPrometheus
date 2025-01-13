@@ -35,10 +35,13 @@ services:
     image: prom/prometheus:v2.35.0
     container_name: prometheus
     volumes:
-      - ./prometheus.yaml:/etc/prometheus/prometheus.yaml
+      - ./prometheus.yaml:/etc/prometheus/prometheus.yml
       #- ./prometheus_data:/prometheus
     command:
-      - '--config.file=/etc/prometheus/prometheus.yaml'
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus' #for data storage
+      - '--storage.tsdb.retention.time=30d' #retention days
+      
     ports:
       - '9090:9090'
 
