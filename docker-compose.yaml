@@ -2,8 +2,8 @@ version: '3.8'
 services:
 
   prometheus_fortigate_exporter:
- #build: ./
-    image: fortigate_exporter-prometheus_fortigate_exporter:latest
+    #build: ./
+    image: fortigate_exporter-prometheus_fortigate_exporter:latest #If fortigate-exporter image was build done.
     container_name: fortigate_exporter
     ports:
       - 9710:9710
