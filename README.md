@@ -14,3 +14,16 @@ sudo chown -R 472:472 ./grafana
 ```sh
 docker-compose up -d
 ```
+# Fortigate_Exporter
+Fortigate_Exporter Github
+<https://github.com/bluecmd/fortigate_exporter>
+
+git clone <https://github.com/bluecmd/fortigate_exporter.git>
+
+前往目錄及啟動docker
+```sh
+cd fortigate_exporter
+```
+```sh
+docker-compose up -d
+```
