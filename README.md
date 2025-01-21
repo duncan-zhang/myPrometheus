@@ -18,7 +18,7 @@ docker-compose up -d
 Fortigate_Exporter Github
 <https://github.com/bluecmd/fortigate_exporter>
 ```sh
-git clone <https://github.com/bluecmd/fortigate_exporter.git>
+git clone https://github.com/bluecmd/fortigate_exporter.git
 ```
 前往目錄及啟動docker
 ```sh
